@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+
+
+</div>
+<!--Etrend wrapper end-->
+
+<!--breadcrumb area start-->
+<div class="breadcrumb_container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{% url 'index' %}">Home ></a>
+                        </li>
+                        <li>Blog Details</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--breadcrumb area end-->
+
+<!--blog details area start-->
+<div class="blog_details_area">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-9 col-md-12">
+                <div class="blog_details_info">
+                    <div class="blog_meta">
+                        <ul>
+                            <li>Etrend</li>
+                            <li>May 01, 2023</li>
+                        </ul>
+                    </div>
+                    <h3>Welcome to our Electronics Store! We are your one-stop destination for all your electronic needs </h3>
+                    <div class="blog_details_img">
+                        <img src="{% static '/assets/img/blog/3.jpg' %}" alt="">
+                    </div>
+                    <div class="post_excerpt">
+                        <p>Extensive Product Range: Our online store offers an extensive selection of electronic products to cater to your diverse needs. From smartphones, tablets, and laptops to home appliances, audio systems, gaming consoles, and smart home devices, we have it all. Our inventory includes products from top brands known for their quality and reliability, ensuring you get the best options available in the market.
+                            <br>
+                            <br>
+                            Secure Online Shopping: We prioritize the security of your personal and financial information. Our online store is equipped with robust security measures to ensure your data is protected during every transaction. You can shop with confidence, knowing that your information is safe and secure.
+                            <br>
+                            <br>
+                            Product Information and Reviews: We provide detailed product descriptions, specifications, and customer reviews to help you make informed purchasing decisions. Our comprehensive product information allows you to compare features, performance, and prices, ensuring you find the perfect product that meets your requirements.
+                            <br>
+                            <br>
+                            Fast and Reliable Shipping: We understand the importance of prompt delivery. We work with trusted shipping partners to ensure your orders are processed quickly and delivered to your doorstep in a timely manner. You can track your shipment and stay updated on its progress, giving you peace of mind throughout the process.
+                            <br>
+                            <br>
+                            Responsive Customer Support: Our dedicated customer support team is available to assist you with any inquiries or concerns you may have. Whether you need help placing an order, tracking a shipment, or resolving an issue, our knowledgeable and friendly staff is here to provide you with prompt and reliable support. </p>
+
+                        <p>Competitive Prices and Special Offers: We strive to offer competitive prices on all our products. Additionally, we frequently run special promotions and discounts, allowing you to save even more on your favorite electronic items. Be sure to check our website regularly for the latest deals and offers.
+                            <br><br>
+                            Experience the convenience of online shopping for electronics at our Online Electronics Store. We are committed to providing you with a seamless and enjoyable shopping experience, making it easier than ever to find and purchase the electronic products you desire. Start exploring our wide range of products today!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

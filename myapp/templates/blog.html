@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+
+</div>
+<!--Etrend wrapper end-->
+
+<!--breadcrumb area start-->
+<div class="breadcrumb_container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{% url 'index' %}">Home ></a>
+                        </li>
+                        <li>Blog</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--breadcrumb area end-->
+
+<!--blog area start-->
+<div class="blog_list_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="single_blog_list">
+                    <div class="blog__thumb">
+                        <a href="{% url 'blog_details' %}"><img src="{% static '/assets/img/blog/11.jpeg' %}" alt=""></a>
+                    </div>
+                    <div class="post__content">
+                        <h3><a href="{% url 'blog_details' %}">Online Shoping All Electronics items</a>
+                        </h3>
+                        <ul>
+                            <li><a href="{% url 'blog_details' %}">Read More</a></li>
+                            <li class="post_date">May 01, 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="single_blog_list">
+                    <div class="blog__thumb">
+                        <a href="{% url 'blog_details' %}"><img src="{% static '/assets/img/blog/22.jpeg' %}"
+                                alt=""></a>
+                    </div>
+                    <div class="post__content">
+                        <h3><a href="{% url 'blog_details' %}">Electronics Shoping</a></h3>
+                        <ul>
+                            <li><a href="{% url 'blog_details' %}">Read More</a></li>
+                            <li class="post_date">July 10, 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="single_blog_list">
+                    <div class="blog__thumb">
+                        <a href="{% url 'blog_details' %}"><img src="{% static '/assets/img/blog/33.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="post__content">
+                        <h3><a href="{% url 'blog_details' %}">All Accessories Avalibles</a></h3>
+                        <ul>
+                            <li><a href="{% url 'blog_details' %}">Read More</a></li>
+                            <li class="post_date">July 10, 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--blog area end-->
+
+{% endblock %}
