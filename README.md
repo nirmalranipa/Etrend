@@ -1,5 +1,5 @@
 # Etrend
- Electronic shop Django Ecommerce project
+Electronic shop Django Ecommerce project
 Ecommerce Project Complete Run
 
 http://127.0.0.1:8000/admin/
@@ -8,7 +8,7 @@ username: admin
 
 password: admin
 
-pip install all Command
+<b>pip install all Command</b>
 
 pip install django
 
